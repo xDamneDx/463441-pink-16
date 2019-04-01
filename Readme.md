@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владимир Ливинский](https://up.htmlacademy.ru/adaptive/16/user/463441).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья 🎸 Туров](https://up.htmlacademy.ru/htmlcss/24/user/240222).
 
 ---
 
