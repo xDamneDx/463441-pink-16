@@ -1,0 +1,51 @@
+.intro {
+  background-color: $darkblue;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.intro__image-block {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  padding-top: 200px;
+}
+
+.intro__image {
+  margin-bottom: -7px;
+}
+
+.intro__info-block {
+  padding: 28px 20px 31px 20px;
+}
+
+.intro__downloads-button {
+  font: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  width: 280px;
+  height: 55px;
+  border: 3px solid #ffffff;
+  border-radius: 55px;
+  background-color: transparent;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.intro__downloads-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.intro__downloads-link {
+  display: block;
+  font-size: 0;
+}
+
+.intro__availability {
+  color: #ffffff;
+  text-align: center;
+}

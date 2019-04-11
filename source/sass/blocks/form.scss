@@ -1,0 +1,86 @@
+.form__fieldset {
+  border: none;
+}
+
+.form__fieldset--grey {
+  background-color: $lightgrey;
+}
+
+.form__legend {
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $pink;
+  text-align: center;
+}
+
+.form__text-label {
+  display: block;
+  margin-left: 23px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $pink;
+}
+
+.form__text-input {
+  padding: 15px 22px;
+  margin-bottom: 15px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form__text-input::placeholder {
+  color: $lightblue;
+}
+
+.form__text-input:hover {
+  border-color: $lightblue;
+}
+
+.form__text-input:focus {
+  border-color: $pink;
+  outline: none;
+}
+
+.form__submit {
+  display: block;
+  margin: 0 auto;
+  padding: 19px 0;
+  width: 276px;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 2px;
+  color: #ffffff;
+  background-color: #2aab6d;
+}
+
+.form__submit:hover,
+.form__submit:focus {
+  background-color: #1c9b5e;
+}
+
+.form__submit:active {
+  color: rgba($color: #ffffff, $alpha: 0.2);
+}
+
+.form__submit:disabled {
+  background-color: #e5e5e5;
+}
+
+.form__remark {
+  display: block;
+  margin: 0 auto;
+  width: 190px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form__remark span {
+  color: $pink;
+}
