@@ -1,0 +1,23 @@
+.slider-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 62px;
+  margin: 0 auto;
+}
+
+.slider-controls__btn {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  font-size: 0;
+}
+
+.slider-controls__btn--current {
+  width: 12px;
+  height: 12px;
+  border: 3px solid $lightblue;
+  background-color: #ffffff;
+}

@@ -4,58 +4,84 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
-    <a class="logo">
-      <img class="logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип приложения Pink">
-    </a>
-    <nav class="nav">
-      <label class="nav__toggle" for="nav-toggle">Меню сайта</label>
-      <input class="visually-hidden" type="checkbox" name="nav-toggle" id="nav-toggle">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link nav__link--current">Главная</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="wrapper">
+      <a class="logo">
+        <img class="logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+          alt="Логотип приложения Pink">
+      </a>
+      <nav class="nav">
+        <label class="nav__toggle" for="nav-toggle">Меню сайта</label>
+        <input class="visually-hidden" type="checkbox" name="nav-toggle" id="nav-toggle">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--current">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="main">
     <h1 class="visually-hidden">Приложение Pink - Раскрась свои серые будни в розовый цвет.</h1>
     <section class="intro">
-      <h2 class="visually-hidden">Скачать приложение</h2>
-      <img class="intro__image" src="http://placehold.it/490x314" width="490" height="314" alt="Рука, держащая телефон">
-      <button class="intro__downloads-button" type="button"></button>
-      <ul class="intro__downloads-list">
-        <li class="intro__downloads-item">
-          <a class="intro__downloads__link intro__downloads__link--app-store" href="#">Apple App Store</a>
-        </li>
-        <li class="intro__downloads__item">
-          <a class="intro__downloads__link intro__downloads__link--google-play" href="#">Google Play</a>
-        </li>
-        <li class="intro__downloads__item">
-          <a class="intro__downloads__link intro__downloads__link--windows-store" href="#">Windows Store</a>
-        </li>
-      </ul>
-      <p class="intro__availability">
-        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-      </p>
+      <div class="wrapper">
+        <h2 class="visually-hidden">Скачать приложение</h2>
+        <div class="intro__image-block">
+          <img class="intro__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286"
+            alt="Рука, держащая телефон">
+        </div>
+        <div class="intro__info-block">
+          <button class="intro__downloads-button" type="button">Скачать приложение</button>
+          <ul class="intro__downloads-list">
+            <li class="intro__downloads-item">
+              <a class="intro__downloads-link intro__downloads-link--app-store" href="#">
+                <img src="img/logo-apple.svg" width="47" height="56" alt="Логотип Apple"
+                  class="intro__downloads-image intro__downloads-image--app-store">
+                Apple App Store</a>
+            </li>
+            <li class="intro__downloads-item">
+              <a class="intro__downloads-link intro__downloads-link--google-play" href="#">
+                <img src="img/logo-android.svg" width="43" height="47" alt="Логотип Android"
+                  class="intro__downloads-image intro__downloads-image--google-play">
+                Google Play</a>
+            </li>
+            <li class="intro__downloads-item">
+              <a class="intro__downloads-link intro__downloads-link--windows-store" href="#">
+                <img src="img/logo-microsoft.svg" width="44" height="41" alt="Логотип Microsoft"
+                  class="intro__downloads-image intro__downloads-image--windows-store">
+                Windows Store</a>
+            </li>
+          </ul>
+          <p class="intro__availability">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </div>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества приложения Pink</h2>
-      <p class="advantages__appeal">Устали от серости мегаполиса?</p>
-      <p class="advantages__appeal">Нам есть, что вам предложить!</p>
-      <ul class="advantages__list">
+      <div class="advantages__appeal">
+        <div class="wrapper">
+          <p class="advantages__appeal-text">Устали от серости мегаполиса?</p>
+          <p class="advantages__appeal-text">Нам есть, что вам предложить!</p>
+        </div>
+      </div>
+      <ul class="advantages__list wrapper">
         <li class="advantages__item advantages__item--mood">
           <h3 class="advantages__title">Поднимает настроение</h3>
           <p class="advantages__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
@@ -67,7 +93,7 @@
             эффект</p>
         </li>
         <li class="advantages__item advantages__item--friends">
-          <img class="advantages__image" src="http://placehold.it/157x320" width="157" height="320"
+          <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320"
             alt="Изображение с фильтром, смайлом и приветственной надписью">
           <h3 class="advantages__title">Заводит новых друзей</h3>
           <p class="advantages__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
@@ -75,10 +101,10 @@
         </li>
       </ul>
     </section>
-    <section class="reviews slider">
+    <section class="reviews slider wrapper">
       <h2 class="visually-hidden">Отзывы наших пользователей</h2>
       <ul class="slider__container">
-        <li class="slider__item">
+        <li class="slider__slide">
           <b class="slider__slide-name">Николай Петров</b>
           <p class="slider__slide-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
             серые вещи! А еще я
@@ -86,7 +112,7 @@
         </li>
       </ul>
       <div class="slider-controls">
-        <button class="slider-controls__btn" type="button">1</button>
+        <button class="slider-controls__btn slider-controls__btn--current" type="button">1</button>
         <button class="slider-controls__btn" type="button">2</button>
         <button class="slider-controls__btn" type="button">3</button>
       </div>
@@ -100,7 +126,7 @@
               <b class="price__tariff-name">???</b>
               <span class="price__tariff-tag">?,?? USD</span>
             </th>
-            <th class="price__tariff">
+            <th class="price__tariff price__tariff--hit">
               <b class="price__tariff-name">Стандарт</b>
               <span class="price__tariff-tag">3,99 USD</span>
             </th>
@@ -148,11 +174,11 @@
       </table>
       <div class="slider-controls">
         <button class="slider-controls__btn" type="button">1</button>
-        <button class="slider-controls__btn" type="button">2</button>
+        <button class="slider-controls__btn slider-controls__btn--current" type="button">2</button>
         <button class="slider-controls__btn" type="button">3</button>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts wrapper">
       <h2 class="contacts__header">Остались вопросы? Свяжитесь с нами!</h2>
       <ul class="contacts__list">
         <li class="contacts__item">
@@ -164,11 +190,13 @@
           <a class="contacts__text contacts__text--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
         <li class="contacts__item">
-          <b class="contacts__title">Звоните:</b>
+          <b class="contacts__title">Приезжайте в гости:</b>
           <address class="contacts__text contacts__text--address">ул. Большая Конюшенная, 19/8</address>
         </li>
       </ul>
-      <img class="contacts__map" src="http://placehold.it/320x645" width="320" height="645"
+    </section>
+    <section class="footer-map">
+      <img class="footer-map__image" src="img/bg-map-mobile@1x.png" width="320" height="645"
         alt="ул. Большая Конюшенная, 19/8">
     </section>
   </main>

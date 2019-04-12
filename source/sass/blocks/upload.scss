@@ -1,0 +1,93 @@
+.upload {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.upload__appeal {
+  width: 280px;
+  margin: 0 auto 40px auto;
+}
+
+.upload__wrapper {
+  background-color: $lightgrey;
+  padding: 20px 0 29px 0;
+}
+
+.upload__image {
+  margin-bottom: 30px;
+}
+
+.upload__edit-buttons {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 30px auto;
+}
+
+.upload__edit-button {
+  font-size: 0;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.upload__edit-svg {
+  opacity: 0.3;
+}
+
+.upload__edit-button--active .upload__edit-svg {
+  opacity: 1;
+  fill: $pink;
+}
+
+.upload__range {
+  position: relative;
+  width: 240px;
+  margin: 0 auto 25px auto;
+}
+
+.upload__range-scale {
+  width: 100%;
+  height: 2px;
+  background-color: $lightblue;
+}
+
+.upload__range-toggle {
+  position: absolute;
+  top: -6px;
+  left: 82%;
+  width: 14px;
+  height: 14px;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  background-color: $lightgrey;
+}
+
+.upload__buttons {
+  margin: 0 auto;
+  padding: 38px 0 0 0;
+  border-top: 1px solid rgba($color: $lightblue, $alpha: 0.1);
+}
+
+.upload__button {
+  font: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  width: 280px;
+  height: 55px;
+  border: 3px solid $lightblue;
+  border-radius: 55px;
+  color: $lightblue;
+  background-color: transparent;
+  margin-bottom: 12px;
+  opacity: 0.1;
+}
+
+.upload__button--submit,
+.upload__button:hover {
+  border: 3px solid $pink;
+  color: $pink;
+  opacity: 1;
+}
