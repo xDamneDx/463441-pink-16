@@ -1,51 +1,130 @@
 .intro {
+  margin-top: -66px;
   background-color: $darkblue;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: center;
+  background-position-y: top;
+  background-size: cover;
 }
 
 .intro__image-block {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
   padding-top: 200px;
+  text-align: center;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
 }
 
 .intro__image {
   margin-bottom: -7px;
+  margin-left: -64px;
 }
 
 .intro__info-block {
   padding: 28px 20px 31px 20px;
+  text-align: center;
+}
+
+.intro__appeal {
+  display: none;
 }
 
 .intro__downloads-button {
   font: inherit;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 18px;
   width: 280px;
   height: 55px;
+  margin-bottom: 32px;
+  color: #ffffff;
   border: 3px solid #ffffff;
   border-radius: 55px;
   background-color: transparent;
-  color: #ffffff;
-  margin-bottom: 32px;
 }
 
 .intro__downloads-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   align-items: flex-end;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 210px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
 }
 
 .intro__downloads-link {
-  display: block;
   font-size: 0;
+  display: block;
 }
 
 .intro__availability {
-  color: #ffffff;
+  width: 250px;
+  margin: 0 auto;
   text-align: center;
+  color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    margin-top: -109px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .intro__wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 660px;
+  }
+
+  .intro__image-block {
+    display: flex;
+    align-items: flex-end;
+    order: 2;
+    background-image: none;
+  }
+
+  .intro__image {
+    margin-bottom: 0;
+    margin-left: -64px;
+  }
+
+  .intro__info-block {
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    order: 1;
+    width: 340px;
+    padding: 200px 0 100px 0;
+  }
+
+  .intro__appeal {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+    display: block;
+    width: 200px;
+    margin: 0 0 35px 0;
+    color: #ffffff;
+  }
+
+  .intro__downloads-list {
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .intro__wrapper {
+    width: 960px;
+  }
+
+  .intro__appeal {
+    font-size: 50px;
+    line-height: 50px;
+    width: 280px;
+    color: #ffffff;
+  }
 }

@@ -1,33 +1,46 @@
 .form__fieldset {
+  margin-bottom: 20px;
+  padding: 30px 20px 0 20px;
   border: none;
 }
 
-.form__fieldset--grey {
+.form__fieldset-wrapper {
+  padding-top: 30px;
   background-color: $lightgrey;
 }
 
 .form__legend {
-  line-height: 30px;
+  line-height: 18px;
+  text-align: center;
   text-transform: uppercase;
   color: $pink;
-  text-align: center;
+}
+
+.form__legend--full-name,
+.form__legend--contacts {
+  display: none;
 }
 
 .form__text-label {
-  display: block;
-  margin-left: 23px;
   line-height: 30px;
+  display: block;
+  margin-bottom: 15px;
   text-transform: uppercase;
   color: $pink;
 }
 
+.form__text-label b {
+  font-weight: initial;
+  margin-left: 23px;
+}
+
 .form__text-input {
-  padding: 15px 22px;
-  margin-bottom: 15px;
-  border: 2px solid #e5e5e5;
-  border-radius: 2px;
   font-size: 18px;
   line-height: 30px;
+  width: 100%;
+  padding: 15px 22px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
 }
 
 .form__text-input::placeholder {
@@ -44,18 +57,18 @@
 }
 
 .form__submit {
-  display: block;
-  margin: 0 auto;
-  padding: 19px 0;
-  width: 276px;
   font: inherit;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+  display: block;
+  width: 276px;
+  margin: 0 auto;
+  padding: 19px 0;
   text-transform: uppercase;
+  color: #ffffff;
   border: 0;
   border-radius: 2px;
-  color: #ffffff;
   background-color: #2aab6d;
 }
 
@@ -73,14 +86,176 @@
 }
 
 .form__remark {
-  display: block;
-  margin: 0 auto;
-  width: 190px;
   font-size: 14px;
   line-height: 30px;
+  display: block;
+  width: 190px;
+  margin: 0 auto;
   text-transform: uppercase;
 }
 
-.form__remark span {
+.form__remark b {
+  font-weight: initial;
   color: $pink;
+}
+
+.form__remark span {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .form__fieldset {
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+  }
+
+  .form__fieldset-wrapper {
+    background-color: initial;
+  }
+
+  .form__legend {
+    padding: 0 26px;
+  }
+
+  .form__legend--contacts {
+    display: initial;
+  }
+
+  .form__fieldset--full-name {
+    order: 1;
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+  }
+
+  .form__fieldset-wrapper--achievements {
+    order: 4;
+  }
+
+  .form__fieldset--contacts {
+    order: 3;
+  }
+
+  .form__fieldset-wrapper--os-type {
+    order: 2;
+  }
+
+  .form__fieldset--emotions {
+    order: 5;
+  }
+
+  .form__text-label--full-name {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 52px;
+  }
+
+  .form__text-label--full-name:last-of-type {
+    margin-bottom: 10px;
+  }
+
+  .form__text-label--full-name b {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+
+  .form__text-label--contacts {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .form__text-label--contacts b {
+    margin-left: 20px;
+  }
+
+  .form__submit-block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    order: 6;
+    width: 100%;
+  }
+
+  .form__submit {
+    width: 296px;
+    margin: 0;
+  }
+
+  .form__remark {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .form__fieldset--full-name {
+    width: 436px;
+  }
+
+  .form__fieldset-wrapper--os-type {
+    width: 436px;
+  }
+
+  .form__fieldset {
+    margin-bottom: 60px;
+  }
+
+  .form__fieldset--contacts {
+    width: 100%;
+  }
+
+  .form__text-label--contacts {
+    float: left;
+    width: 376px;
+    margin-right: 70px;
+  }
+
+  .form__text-label--contacts:nth-of-type(2n) {
+    margin-right: 0;
+  }
+
+  .form__fieldset-wrapper--achievements {
+    width: 100%;
+  }
+
+  .form__fieldset--achievements .form__options-list {
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 139px;
+  }
+
+  .form__fieldset--emotions {
+    width: 100%;
+  }
+
+  .form__textarea--emotions {
+    height: 125px;
+  }
+
+  .form__remark {
+    width: 320px;
+    text-align: right;
+  }
+
+  .form__remark span {
+    display: initial;
+  }
 }
