@@ -11,14 +11,15 @@
 
 <body>
   <header class="header">
-    <div class="wrapper">
-      <a class="logo">
-        <img class="logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+    <div class="header__wrapper wrapper">
+      <a class="header__logo-link">
+        <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
           alt="Логотип приложения Pink">
       </a>
+      <input class="header__checkbox visually-hidden" type="checkbox" name="nav-toggle" id="nav-toggle">
+      <label class="header__nav-toggle" for="nav-toggle">Меню сайта</label>
+      <div class="header__block"></div>
       <nav class="nav">
-        <label class="nav__toggle" for="nav-toggle">Меню сайта</label>
-        <input class="visually-hidden" type="checkbox" name="nav-toggle" id="nav-toggle">
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="index.html">Главная</a>
@@ -38,24 +39,28 @@
   </header>
   <main class="main">
     <div class="main__header-block">
-      <h1 class="main__header wrapper">Фотографии пользователей</h1>
+      <h1 class="main__header">Фотографии пользователей</h1>
     </div>
-    <section class="gallery wrapper">
+    <section class="gallery">
       <h2 class="visually-hidden">Галерея</h2>
       <p class="gallery__appeal">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
         ваших?</p>
       <ul class="gallery__list">
-        <li class="gallery__item">
-          <figure class="gallery__block gallery__block--panorama">
-            <img class="gallery__image gallery__image--panorama" src="img/panorama-mobile@1x.jpg" width="320"
-              height="137" alt="Фотография пользователя Анна">
+        <li class="gallery__item gallery__item--panorama">
+          <figure class="gallery__block">
+            <img class="gallery__image" src="img/panorama-mobile@1x.jpg" width="320" height="137"
+              alt="Фотография пользователя Анна">
             <figcaption class="gallery__description">
-              <b class="gallery__name">Анна</b>
-              <output class="gallery__date">(5 минут назад)</output>
+              <div class="gallery__title-block">
+                <b class="gallery__name">Анна</b>
+                <output class="gallery__date">(5 минут назад)</output>
+              </div>
               <p class="gallery__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
                 трансляцию в перископе, задавайте свои вопросы!</p>
-              <button class="gallery__like-btn" type="button">Поставить лайк</button>
-              <span class="gallery__like-desc">Нравится:<output class="gallery__like-num">215</output></span>
+              <div class="gallery__like-block">
+                <button class="gallery__like-btn" type="button">Поставить лайк</button>
+                <span class="gallery__like-desc">Нравится:<output class="gallery__like-num">215</output></span>
+              </div>
             </figcaption>
           </figure>
         </li>
@@ -64,11 +69,15 @@
             <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180"
               alt="Фотография пользователя Левон">
             <figcaption class="gallery__description">
-              <b class="gallery__name">Левон</b>
-              <output class="gallery__date">(5 часов назад)</output>
+              <div class="gallery__title-block">
+                <b class="gallery__name">Левон</b>
+                <output class="gallery__date">(5 часов назад)</output>
+              </div>
               <p class="gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <button class="gallery__like-btn" type="button">Поставить лайк</button>
-              <span class="gallery__like-desc">Нравится:<output class="gallery__like-num">356</output></span>
+              <div class="gallery__like-block">
+                <button class="gallery__like-btn" type="button">Поставить лайк</button>
+                <span class="gallery__like-desc">Нравится:<output class="gallery__like-num">356</output></span>
+              </div>
             </figcaption>
           </figure>
         </li>
@@ -77,11 +86,15 @@
             <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180"
               alt="Фотография пользователя Антон">
             <figcaption class="gallery__description">
-              <b class="gallery__name">Антон</b>
-              <output class="gallery__date">(12 часов назад)</output>
+              <div class="gallery__title-block">
+                <b class="gallery__name">Антон</b>
+                <output class="gallery__date">(12 часов назад)</output>
+              </div>
               <p class="gallery__comment">Соседи будут рады!</p>
-              <button class="gallery__like-btn" type="button">Поставить лайк</button>
-              <span class="gallery__like-desc">Нравится:<output class="gallery__like-num">666</output></span>
+              <div class="gallery__like-block">
+                <button class="gallery__like-btn" type="button">Поставить лайк</button>
+                <span class="gallery__like-desc">Нравится:<output class="gallery__like-num">666</output></span>
+              </div>
             </figcaption>
           </figure>
         </li>
@@ -90,11 +103,15 @@
             <img class="gallery__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180"
               alt="Фотография пользователя Борис">
             <figcaption class="gallery__description">
-              <b class="gallery__name">Борис</b>
-              <output class="gallery__date">(20 часов назад)</output>
+              <div class="gallery__title-block">
+                <b class="gallery__name">Борис</b>
+                <output class="gallery__date">(20 часов назад)</output>
+              </div>
               <p class="gallery__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <button class="gallery__like-btn" type="button">Поставить лайк</button>
-              <span class="gallery__like-desc">Нравится:<output class="gallery__like-num">215</output></span>
+              <div class="gallery__like-block">
+                <button class="gallery__like-btn" type="button">Поставить лайк</button>
+                <span class="gallery__like-desc">Нравится:<output class="gallery__like-num">215</output></span>
+              </div>
             </figcaption>
           </figure>
         </li>
@@ -103,11 +120,15 @@
             <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180"
               alt="Фотография пользователя Сергей">
             <figcaption class="gallery__description">
-              <b class="gallery__name">Сергей</b>
-              <output class="gallery__date">(25 часов назад)</output>
+              <div class="gallery__title-block">
+                <b class="gallery__name">Сергей</b>
+                <output class="gallery__date">(25 часов назад)</output>
+              </div>
               <p class="gallery__comment">Самая кубанская в мире!</p>
-              <button class="gallery__like-btn" type="button">Поставить лайк</button>
-              <span class="gallery__like-desc">Нравится:<output class="gallery__like-num">4</output></span>
+              <div class="gallery__like-block">
+                <button class="gallery__like-btn" type="button">Поставить лайк</button>
+                <span class="gallery__like-desc">Нравится:<output class="gallery__like-num">4</output></span>
+              </div>
             </figcaption>
           </figure>
         </li>
@@ -116,11 +137,15 @@
             <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180"
               alt="Фотография пользователя Максим">
             <figcaption class="gallery__description">
-              <b class="gallery__name">Максим</b>
-              <output class="gallery__date">(40 часов назад)</output>
+              <div class="gallery__title-block">
+                <b class="gallery__name">Максим</b>
+                <output class="gallery__date">(40 часов назад)</output>
+              </div>
               <p class="gallery__comment">Где снег-то?</p>
-              <button class="gallery__like-btn" type="button">Поставить лайк</button>
-              <span class="gallery__like-desc">Нравится:<output class="gallery__like-num">150</output></span>
+              <div class="gallery__like-block">
+                <button class="gallery__like-btn" type="button">Поставить лайк</button>
+                <span class="gallery__like-desc">Нравится:<output class="gallery__like-num">150</output></span>
+              </div>
             </figcaption>
           </figure>
         </li>
@@ -129,11 +154,15 @@
             <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180"
               alt="Фотография пользователя Надежда">
             <figcaption class="gallery__description">
-              <b class="gallery__name">Надежда</b>
-              <output class="gallery__date">(45 часов назад)</output>
+              <div class="gallery__title-block">
+                <b class="gallery__name">Надежда</b>
+                <output class="gallery__date">(45 часов назад)</output>
+              </div>
               <p class="gallery__comment">Всем GM и взаимные лайки!</p>
-              <button class="gallery__like-btn" type="button">Поставить лайк</button>
-              <span class="gallery__like-desc">Нравится:<output class="gallery__like-num">2560</output></span>
+              <div class="gallery__like-block">
+                <button class="gallery__like-btn" type="button">Поставить лайк</button>
+                <span class="gallery__like-desc">Нравится:<output class="gallery__like-num">2560</output></span>
+              </div>
             </figcaption>
           </figure>
         </li>
@@ -142,41 +171,61 @@
     <section class="upload">
       <p class="upload__appeal">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       <div class="upload__wrapper">
-        <div class="upload__block wrapper">
+        <div class="upload__block">
           <img class="upload__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374"
             alt="Ваша загруженная фотография">
-          <div class="upload__edit-buttons">
-            <button class="upload__edit-button upload__edit-button--crop upload__edit-button--active" type="button">
-              <svg class="upload__edit-svg" enable-background="new 0 0 48 48" height="48" viewBox="0 0 48 48" width="48"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="m0 0h48v48h-48z" fill="none" />
-                <path
-                  d="m34 30h4v-16c0-2.21-1.79-4-4-4h-16v4h16zm-20 4v-32h-4v8h-8v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4z" />
-              </svg>
-              Обрезка</button>
-            <button class="upload__edit-button upload__edit-button--fill" type="button">
-              <svg class="upload__edit-svg" enable-background="new 0 0 48 48" height="48" viewBox="0 0 48 48" width="48"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="m0 0h48v48h-48z" fill="none" />
-                <path
-                  d="m33.12 17.88-17.88-17.88-2.83 2.83 4.76 4.76-10.29 10.29c-1.17 1.17-1.17 3.07 0 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11c1.17-1.17 1.17-3.07 0-4.24zm-22.71 2.12 9.59-9.58 9.59 9.58zm27.59 3s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7z" />
-                <path d="m0 40h48v3h-48z" /></svg>
-              Заливка</button>
-            <button class="upload__edit-button upload__edit-button--contrast" type="button">
-              <svg class="upload__edit-svg" enable-background="new -35.422 -7.96 31.92 31.92" height="31.92"
-                viewBox="-35.422 -7.96 31.92 31.92" width="31.92" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96s15.96-7.147 15.96-15.96c0-8.815-7.146-15.96-15.96-15.96z" />
-                <path d="m-19.462 16.331c4.706 0 8.52-3.813 8.52-8.52 0-4.705-3.813-8.519-8.52-8.519" /></svg>
-              Контраст</button>
-          </div>
-          <div class="upload__range">
-            <div class="upload__range-scale"></div>
-            <div class="upload__range-toggle"></div>
-          </div>
-          <div class="upload__buttons">
-            <button class="upload__button upload__button--submit" type="button">Запостить</button>
-            <button class="upload__button upload__button--reset" type="button">Отмена</button>
+          <div class="upload__edit-block">
+            <ul class="upload__edit-list">
+              <li class="upload__edit-item">
+                <button class="upload__edit-button upload__edit-button--crop upload__edit-button--active" type="button">
+                  <svg class="upload__edit-svg" enable-background="new 0 0 48 48" height="48" viewBox="0 0 48 48"
+                    width="48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m0 0h48v48h-48z" fill="none" />
+                    <path
+                      d="m34 30h4v-16c0-2.21-1.79-4-4-4h-16v4h16zm-20 4v-32h-4v8h-8v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4z" />
+                  </svg>
+                  Обрезка</button>
+                <div class="upload__range upload__range--crop">
+                  <div class="upload__range-scale"></div>
+                  <div class="upload__range-toggle"></div>
+                </div>
+              </li>
+              <li class="upload__edit-item">
+                <button class="upload__edit-button upload__edit-button--fill" type="button">
+                  <svg class="upload__edit-svg" enable-background="new 0 0 48 48" height="48" viewBox="0 0 48 48"
+                    width="48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m0 0h48v48h-48z" fill="none" />
+                    <path
+                      d="m33.12 17.88-17.88-17.88-2.83 2.83 4.76 4.76-10.29 10.29c-1.17 1.17-1.17 3.07 0 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11c1.17-1.17 1.17-3.07 0-4.24zm-22.71 2.12 9.59-9.58 9.59 9.58zm27.59 3s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7z" />
+                    <path d="m0 40h48v3h-48z" /></svg>
+                  Заливка</button>
+                <div class="upload__range upload__range--fill">
+                  <div class="upload__range-scale"></div>
+                  <div class="upload__range-toggle"></div>
+                </div>
+              </li>
+              <li class="upload__edit-item">
+                <button class="upload__edit-button upload__edit-button--contrast" type="button">
+                  <svg class="upload__edit-svg" enable-background="new -35.422 -7.96 31.92 31.92" height="31.92"
+                    viewBox="-35.422 -7.96 31.92 31.92" width="31.92" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="m-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96s15.96-7.147 15.96-15.96c0-8.815-7.146-15.96-15.96-15.96z" />
+                    <path d="m-19.462 16.331c4.706 0 8.52-3.813 8.52-8.52 0-4.705-3.813-8.519-8.52-8.519" /></svg>
+                  Контраст</button>
+                <div class="upload__range upload__range--contrast">
+                  <div class="upload__range-scale"></div>
+                  <div class="upload__range-toggle"></div>
+                </div>
+              </li>
+            </ul>
+            <div class="upload__range upload__range--global">
+              <div class="upload__range-scale"></div>
+              <div class="upload__range-toggle"></div>
+            </div>
+            <div class="upload__buttons">
+              <button class="upload__button upload__button--submit" type="button">Запостить</button>
+              <button class="upload__button upload__button--reset" type="button">Отмена</button>
+            </div>
           </div>
         </div>
       </div>

@@ -1,3 +1,134 @@
-.header {
+.header__wrapper {
+  position: relative;
+}
+
+.header__logo-link {
+  position: absolute;
+  z-index: 10;
+  top: 22px;
+  left: 20px;
+  display: block;
+}
+
+.header__nav-toggle {
+  font-size: 0;
+  position: absolute;
+  z-index: 10;
+  top: 21px;
+  right: 20px;
+  width: 50px;
+  height: 24px;
+}
+
+.header__nav-toggle::before,
+.header__nav-toggle::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.header__nav-toggle::before {
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 -1px rgba($color: #ffffff, $alpha: 0.3),
+    0 -8px 0 -1px rgba($color: #ffffff, $alpha: 0.3),
+    0 10px 0 0 #ffffff,
+    0 -10px 0 0 #ffffff;
+}
+
+.header__block {
+  width: 100%;
+  min-height: 63px;
+  opacity: 0.3;
+  background-color: #000000;
+}
+
+.header__checkbox:checked + .header__nav-toggle::before {
+  width: 30px;
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+
+.header__checkbox:checked + .header__nav-toggle::after {
+  width: 30px;
+  height: 4px;
+  transform: rotate(-45deg);
+  background-color: #ffffff;
+}
+
+.header__checkbox:checked ~ .header__block {
+  margin-bottom: 1px;
+  opacity: 1;
   background-color: $lightblue;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 0 #000000;
+}
+
+.header__checkbox:checked ~ .nav {
+  display: block;
+}
+
+.header__checkbox + .header__nav-toggle:hover::before,
+.header__checkbox:focus + .header__nav-toggle::before {
+  background-color: $pink;
+  box-shadow: 0 8px 0 -1px rgba($color: $pink, $alpha: 0.3),
+    0 -8px 0 -1px rgba($color: $pink, $alpha: 0.3),
+    0 10px 0 0 $pink,
+    0 -10px 0 0 $pink;
+}
+
+.header__checkbox:checked + .header__nav-toggle:hover::before,
+.header__checkbox:checked + .header__nav-toggle:hover::after,
+.header__checkbox:checked:focus + .header__nav-toggle::before,
+.header__checkbox:checked:focus + .header__nav-toggle::after {
+  background-color: $pink;
+  box-shadow: none;
+}
+
+.header__checkbox:active + .header__nav-toggle:hover::before,
+.header__checkbox:active + .header__nav-toggle:hover::after {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .header__logo-link {
+    top: 44px;
+  }
+
+  .header__nav-toggle {
+    top: 44px;
+  }
+
+  .header__block {
+    min-height: 109px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 110px;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+  }
+
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 960px;
+  }
+
+  .header__checkbox,
+  .header__nav-toggle,
+  .header__block {
+    display: none;
+  }
+
+  .header__logo-link {
+    position: initial;
+  }
 }

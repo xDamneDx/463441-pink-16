@@ -1,4 +1,16 @@
 .reviews {
-  background-color: #ffffff;
   padding: 42px 21px 68px 21px;
+  background-color: #ffffff;
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .reviews .slider-controls {
+    display: none;
+  }
 }
