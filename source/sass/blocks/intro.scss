@@ -28,17 +28,28 @@
 }
 
 .intro__downloads-button {
-  font: inherit;
+  display: block;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
-  width: 280px;
+  padding: 14px;
+  width: 281px;
   height: 55px;
   margin-bottom: 32px;
   color: #ffffff;
   border: 3px solid #ffffff;
   border-radius: 55px;
   background-color: transparent;
+}
+
+.intro__downloads-button:hover,
+.intro__downloads-button:focus {
+  color: $pink;
+  background-color: #ffffff;
+}
+
+.intro__downloads-button:active {
+  color: rgba($color: $pink, $alpha: 0.3);
 }
 
 .intro__downloads-list {
@@ -107,6 +118,10 @@
     color: #ffffff;
   }
 
+  .intro__downloads-button {
+    width: 300px;
+  }
+
   .intro__downloads-list {
     margin-bottom: 35px;
   }
@@ -126,5 +141,9 @@
     line-height: 50px;
     width: 280px;
     color: #ffffff;
+  }
+
+  .intro__downloads-button {
+    font-size: 21px;
   }
 }

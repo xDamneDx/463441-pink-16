@@ -96,6 +96,7 @@
     height: 41px;
     border: none;
     background-color: transparent;
+    opacity: 0.3;
   }
 
   .slider__nav-btn::after {
@@ -114,5 +115,14 @@
 
   .slider__nav-btn--next::after {
     background-image: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 21.706 41.719' height='41.719' viewBox='0 0 21.706 41.719' width='21.706' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m19.661 20.859-19.413-19.413c-.331-.331-.331-.867 0-1.198.33-.331.867-.331 1.197 0l20.013 20.012c.33.33.33.867 0 1.197l-20.013 20.014c-.164.165-.382.248-.599.248s-.434-.083-.599-.248c-.331-.331-.331-.867 0-1.198z' fill='283645'/%3E%3C/svg%3E");
+  }
+
+  .slider__nav-btn:hover,
+  .slider__nav-btn:focus {
+    opacity: 0.6;
+  }
+
+  .slider__nav-btn:active {
+    opacity: 0.1;
   }
 }

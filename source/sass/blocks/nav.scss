@@ -26,6 +26,15 @@
   color: #ffffff;
 }
 
+.nav__link:hover,
+.nav__link:focus {
+  color: $pink;
+}
+
+.nav__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $desktop-width) {
   .nav {
     display: block;
@@ -40,13 +49,31 @@
 
   .nav__item {
     margin-bottom: 0;
-    padding: 0;
+    padding: 10px 0 10px 0;
     background-color: transparent;
     box-shadow: initial;
+  }
+
+  .nav__item--current {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .nav__item--current a,
+  .nav__item--current a:hover,
+  .nav__item--current a:focus,
+  .nav__item--current a:active {
+    color: #ffffff;
+    opacity: 1;
+    cursor: pointer;
   }
 
   .nav__link {
     font-weight: 400;
     line-height: 18px;
+  }
+
+  .nav__link:active {
+    color: #ffffff;
+    opacity: 0.3;
   }
 }
