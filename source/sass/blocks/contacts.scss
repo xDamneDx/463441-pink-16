@@ -32,6 +32,17 @@
   color: $pink;
 }
 
+.contacts__text--mail:hover,
+.contacts__text--mail:focus {
+  color: $lightblue;
+  text-decoration: underline;
+}
+
+.contacts__text--mail:active {
+  color: $lightblue;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
     padding-right: 0;

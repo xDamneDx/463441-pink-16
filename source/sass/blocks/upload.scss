@@ -84,6 +84,10 @@
   background-color: $lightgrey;
 }
 
+.upload__range-toggle:active {
+  background-color: $pink;
+}
+
 .upload__buttons {
   width: 320px;
   margin: 0 auto;
@@ -100,18 +104,40 @@
   width: 280px;
   height: 55px;
   margin-bottom: 12px;
-  opacity: 0.1;
   color: $lightblue;
   border: 3px solid $lightblue;
   border-radius: 55px;
   background-color: transparent;
 }
 
-.upload__button--submit,
-.upload__button:hover {
-  opacity: 1;
+.upload__button--submit {
   color: $pink;
-  border: 3px solid $pink;
+  border-color: $pink;
+}
+
+.upload__button--submit:hover,
+.upload__button--submit:focus {
+  color: #ffffff;
+  background-color: $pink;
+}
+
+.upload__button--submit:active {
+  color: rgba($color: #ffffff, $alpha: 0.3);
+}
+
+.upload__button--reset {
+  opacity: 0.1;
+}
+
+.upload__button--reset:hover,
+.upload__button--reset:focus {
+  opacity: 0.3;
+}
+
+.upload__button--reset:active {
+  color: rgba($color: #ffffff, $alpha: 0.3);
+  background-color: $lightblue;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

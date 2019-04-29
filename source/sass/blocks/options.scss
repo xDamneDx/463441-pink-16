@@ -80,6 +80,7 @@
   border-color: $lightblue;
 }
 
+.options__checkbox-input:active + .options__checkbox,
 .options__radio-input:active + .options__radio {
   border-color: $pink;
 }
