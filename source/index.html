@@ -21,7 +21,7 @@
       <div class="header__block"></div>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item nav__item--current">
+          <li class="nav__item">
             <a class="nav__link">Главная</a>
           </li>
           <li class="nav__item">
@@ -125,22 +125,26 @@
         </div>
       </div>
     </section>
-    <section class="reviews slider wrapper">
-      <h2 class="visually-hidden">Отзывы наших пользователей</h2>
-      <button class="slider__nav-btn slider__nav-btn--prev" type="button">Прыдыдущий отзыв</button>
-      <ul class="slider__container">
-        <li class="slider__slide">
-          <b class="slider__slide-name">Николай Петров <span class="slider__slide-name-desc">25 лет, водитель трамвая</span></b>
-          <p class="slider__slide-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
-            серые вещи! А еще я
-            познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </li>
-      </ul>
-      <button class="slider__nav-btn slider__nav-btn--next" type="button">Следующий отзыв</button>
-      <div class="slider-controls">
-        <button class="slider-controls__btn slider-controls__btn--current" type="button">1</button>
-        <button class="slider-controls__btn" type="button">2</button>
-        <button class="slider-controls__btn" type="button">3</button>
+    <section class="reviews">
+      <div class="reviews__container slider wrapper">
+        <h2 class="visually-hidden">Отзывы наших пользователей</h2>
+        <button class="slider__nav-btn slider__nav-btn--prev" type="button">Прыдыдущий отзыв</button>
+        <ul class="slider__container">
+          <li class="slider__slide">
+            <b class="slider__slide-name">Николай Петров <span class="slider__slide-name-desc">25 лет, водитель
+                трамвая</span></b>
+            <p class="slider__slide-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные
+              серые вещи! А еще я
+              познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+        </ul>
+        <button class="slider__nav-btn slider__nav-btn--next" type="button">Следующий отзыв</button>
+        <div class="slider-controls">
+          <button class="slider-controls__btn slider-controls__btn--current" type="button">1</button>
+          <button class="slider-controls__btn" type="button">2</button>
+          <button class="slider-controls__btn" type="button">3</button>
+        </div>
       </div>
     </section>
     <section class="price">
@@ -148,22 +152,28 @@
       <table class="price__table">
         <thead class="price__head">
           <tr class="price__row price__row--head">
+            <th class="price__tariff-desc">
+              <b class="price__tariff-name">Тип доступного контента</b>
+            </th>
             <th class="price__tariff">
-              <b class="price__tariff-name">???</b>
-              <span class="price__tariff-tag">?,?? USD</span>
+              <b class="price__tariff-name">База</b>
+              <span class="price__tariff-tag">1,99 USD</span>
             </th>
             <th class="price__tariff price__tariff--hit">
               <b class="price__tariff-name">Стандарт</b>
               <span class="price__tariff-tag">3,99 USD</span>
             </th>
             <th class="price__tariff">
-              <b class="price__tariff-name">???</b>
-              <span class="price__tariff-tag">?,?? USD</span>
+              <b class="price__tariff-name">Анлим</b>
+              <span class="price__tariff-tag">9,99 USD</span>
             </th>
           </tr>
         </thead>
         <tbody class="price__body">
           <tr class="price__row price__row--body">
+            <th class="price__option price__option--desc">
+              <span class="price__option-text">Розовый фильтр</span>
+            </th>
             <td class="price__option price__option--available">
               <span class="price__option-text">Розовый фильтр</span>
             </td>
@@ -175,6 +185,10 @@
             </td>
           </tr>
           <tr class="price__row price__row--body">
+
+            <th class="price__option price__option--desc">
+              <span class="price__option-text">Смайлики</span>
+            </th>
             <td class="price__option price__option--unavailable">
               <span class="price__option-text">Смайлики</span>
             </td>
@@ -186,6 +200,9 @@
             </td>
           </tr>
           <tr class="price__row price__row--body">
+            <th class="price__option price__option--desc">
+              <span class="price__option-text">Комментарии</span>
+            </th>
             <td class="price__option price__option--unavailable">
               <span class="price__option-text">Комментарии</span>
             </td>
@@ -207,52 +224,52 @@
     <section class="contacts wrapper">
       <h2 class="contacts__header">Остались вопросы? Свяжитесь с нами!</h2>
       <ul class="contacts__list">
-        <li class="contacts__item">
+        <li class="contacts__item contacts__item--tel">
           <b class="contacts__title">Звоните:</b>
           <a class="contacts__text contacts__text--tel" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </li>
-        <li class="contacts__item">
+        <li class="contacts__item contacts__item--mail">
           <b class="contacts__title">Пишите:</b>
           <a class="contacts__text contacts__text--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
-        <li class="contacts__item">
+        <li class="contacts__item contacts__item--address">
           <b class="contacts__title">Приезжайте в гости:</b>
           <address class="contacts__text contacts__text--address">ул. Большая Конюшенная, 19/8</address>
         </li>
       </ul>
     </section>
     <section class="footer-map">
-        <h2 class="contacts__header">Как нас найти.</h2>
+      <h2 class="visually-hidden">Как нас найти.</h2>
       <img class="footer-map__image" src="img/bg-map-mobile@1x.png" width="320" height="645"
         alt="ул. Большая Конюшенная, 19/8">
     </section>
   </main>
   <footer class="footer footer--index wrapper">
-      <a class="footer__logo" href="index.html">
-        <img class="footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40"
-          alt="Логотип приложения Pink">
+    <a class="footer__logo" href="index.html">
+      <img class="footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40"
+        alt="Логотип приложения Pink">
+    </a>
+    <ul class="footer__socials socials">
+      <li class="socials__item">
+        <a href="#" class="socials__button socials__button--twitter">Twitter</a>
+      </li>
+      <li class="socials__item">
+        <a href="#" class="socials__button socials__button--facebook">Facebook</a>
+      </li>
+      <li class="socials__item">
+        <a href="#" class="socials__button socials__button--youtube">YouTube</a>
+      </li>
+    </ul>
+    <p class="footer__copyright">
+      Разработано
+      <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg class="html-academy-logo" height="34" viewBox="0 0 40 50" width="27" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m20.2 0h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2zm17 36.8-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2zm-.1-17-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2zm.1-1.8-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8z"
+            fill="#d22856" /></svg>
       </a>
-      <ul class="footer__socials socials">
-        <li class="socials__item">
-          <a href="#" class="socials__button socials__button--twitter">Twitter</a>
-        </li>
-        <li class="socials__item">
-          <a href="#" class="socials__button socials__button--facebook">Facebook</a>
-        </li>
-        <li class="socials__item">
-          <a href="#" class="socials__button socials__button--youtube">YouTube</a>
-        </li>
-      </ul>
-      <p class="footer__copyright">
-        Разработано:
-        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="html-academy-logo" height="34" viewBox="0 0 40 50" width="27" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="m20.2 0h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2zm17 36.8-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2zm-.1-17-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2zm.1-1.8-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8z"
-              fill="#d22856" /></svg>
-        </a>
-      </p>
-    </footer>
+    </p>
+  </footer>
 </body>
 
 </html>

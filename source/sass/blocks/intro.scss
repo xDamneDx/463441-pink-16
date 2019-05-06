@@ -1,5 +1,5 @@
 .intro {
-  margin-top: -66px;
+  margin-top: -69px;
   background-color: $darkblue;
   background-position-x: center;
   background-position-y: top;
@@ -7,10 +7,12 @@
 }
 
 .intro__image-block {
-  padding-top: 200px;
+  padding-top: 178px;
   text-align: center;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
 }
 
 .intro__image {
@@ -35,7 +37,7 @@
   padding: 14px;
   width: 281px;
   height: 55px;
-  margin-bottom: 32px;
+  margin: 0 auto 32px auto;
   color: #ffffff;
   border: 3px solid #ffffff;
   border-radius: 55px;
@@ -56,8 +58,8 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  width: 210px;
-  margin: 0 auto;
+  width: 206px;
+  margin: 0 auto 10px auto;
   padding: 0;
   list-style: none;
 }
@@ -70,6 +72,7 @@
 .intro__availability {
   width: 250px;
   margin: 0 auto;
+  font-weight: 300;
   text-align: center;
   color: #ffffff;
 }
@@ -105,13 +108,13 @@
     flex-direction: column;
     order: 1;
     width: 340px;
-    padding: 200px 0 100px 0;
+    padding: 205px 0 110px 0;
   }
 
   .intro__appeal {
     font-size: 40px;
     font-weight: 300;
-    line-height: 40px;
+    line-height: 46px;
     display: block;
     width: 200px;
     margin: 0 0 35px 0;
@@ -120,30 +123,50 @@
 
   .intro__downloads-button {
     width: 300px;
+    padding: 12px;
+    margin-bottom: 44px;
   }
 
   .intro__downloads-list {
-    margin-bottom: 35px;
+    margin-bottom: 24px;
+  }
+
+  .intro__availability {
+    font-size: 18px;
+    width: 300px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: initial;
   }
 
   .intro__wrapper {
     width: 960px;
   }
 
+  .intro__info-block {
+    width: 322px;
+    padding: 217px 0 122px 0;
+  }
+
   .intro__appeal {
+    margin: 0 0 52px 0;
     font-size: 50px;
-    line-height: 50px;
+    line-height: 60px;
     width: 280px;
     color: #ffffff;
   }
 
   .intro__downloads-button {
     font-size: 21px;
+    padding: 14px;
+    margin-bottom: 66px;
+  }
+
+  .intro__downloads-list {
+    margin-bottom: 44px;
   }
 }

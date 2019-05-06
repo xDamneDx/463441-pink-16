@@ -14,7 +14,7 @@
     justify-content: space-between;
     width: 660px;
     margin: 0 auto;
-    padding: 58px 20px;
+    padding: 58px 31px 59px 20px;
   }
 
   .known-fact__image-wrapper {
@@ -47,14 +47,19 @@
 
   .known-fact__block {
     width: 300px;
+    padding-top: 13px;
   }
 
   .known-fact__title {
     font-size: 30px;
     line-height: 36px;
     width: 180px;
-    margin: 0;
+    margin: 0 0 10px 0;
     color: #000000;
+  }
+
+  .known-fact__desc {
+    margin: 0 0 10px 0;
   }
 
   .known-fact__link {
@@ -70,6 +75,7 @@
 
   .known-fact__wrapper {
     width: 960px;
+    padding: 31px 59px 68px 9px;
   }
 
   .known-fact__image-wrapper {
@@ -95,18 +101,20 @@
 
   .known-fact__block {
     width: 525px;
+    padding-top: 49px;
   }
 
   .known-fact__title {
     line-height: 30px;
     width: 310px;
-    margin: 0;
+    margin: 0 0 24px 0;
     color: #000000;
   }
 
   .known-fact__desc {
     font-size: 18px;
     line-height: 30px;
+    margin: 0 0 30px 0;
   }
 
   .known-fact__link {
