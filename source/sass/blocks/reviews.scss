@@ -1,13 +1,37 @@
 .reviews {
-  padding: 42px 21px 68px 21px;
+  position: relative;
   background-color: #ffffff;
 }
 
+.reviews::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 95px;
+  width: 100%;
+  left: 0;
+  bottom: -95px;
+  background-image: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 1200 94.074' height='94.074' viewBox='0 0 1200 94.074' width='1200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1200 0h-1200v94.074z' fill='%23ffffff'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.reviews__container {
+  padding: 40px 21px 8px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__container {
+    padding: 40px 21px 0 20px;
+  }
+}
+
 @media (min-width: $desktop-width) {
-  .reviews {
+  .reviews__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 72px 10px 0 10px;
   }
 
   .reviews .slider-controls {

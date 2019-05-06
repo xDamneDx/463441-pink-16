@@ -11,7 +11,7 @@
 
 .nav__item {
   margin-bottom: 1px;
-  padding: 16px;
+  padding: 16px 0 15px 0;
   list-style: none;
   text-align: center;
   background-color: $lightblue;
@@ -38,18 +38,20 @@
 @media (min-width: $desktop-width) {
   .nav {
     display: block;
-    width: 625px;
+    width: 622px;
+    margin-right: 9px;
   }
 
   .nav__list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .nav__item {
     margin-bottom: 0;
-    padding: 10px 0 10px 0;
+    padding: 14px 0 10px 0;
     background-color: transparent;
     box-shadow: initial;
   }
@@ -70,6 +72,7 @@
   .nav__link {
     font-weight: 400;
     line-height: 18px;
+    text-transform: capitalize;
   }
 
   .nav__link:active {
