@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   height: 200px;
-  text-align: center;
+  margin: 0 auto;
   background-color: #f3f1ea;
 }
 
@@ -21,21 +21,32 @@
 }
 
 .footer-map__image {
-  margin-top: -445px;
+  display: block;
+  margin: -445px 0 0 0;
 }
 
 @media (min-width: $tablet-width) {
   .footer-map {
+    width: 660px;
     height: 375px;
+  }
+
+  .footer-map__image {
+    margin: -346px 0 0 -20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .footer-map {
+    width: 1200px;
     height: 502px;
   }
 
   .footer-map::before {
     height: 125px;
+  }
+
+  .footer-map__image {
+    margin: -277px 0 0 0;
   }
 }

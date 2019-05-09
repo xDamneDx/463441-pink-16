@@ -97,8 +97,7 @@
   }
 
   .intro__image {
-    margin-bottom: 0;
-    margin-left: -64px;
+    margin-left: -340px;
   }
 
   .intro__info-block {
@@ -108,27 +107,27 @@
     flex-direction: column;
     order: 1;
     width: 340px;
-    padding: 205px 0 110px 0;
+    padding: 201px 0 110px 20px;
   }
 
   .intro__appeal {
     font-size: 40px;
     font-weight: 300;
-    line-height: 46px;
+    line-height: 48px;
     display: block;
     width: 200px;
-    margin: 0 0 35px 0;
+    margin: 0 0 31px 0;
     color: #ffffff;
   }
 
   .intro__downloads-button {
     width: 300px;
-    padding: 12px;
-    margin-bottom: 44px;
+    padding: 14px;
+    margin-bottom: 45px;
   }
 
   .intro__downloads-list {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 
   .intro__availability {
@@ -145,11 +144,17 @@
 
   .intro__wrapper {
     width: 960px;
+    overflow: hidden;
   }
 
   .intro__info-block {
     width: 322px;
-    padding: 217px 0 122px 0;
+    padding: 217px 0 122px 10px;
+  }
+
+  .intro__image {
+    margin-left: -284px;
+    margin-bottom: -8px;
   }
 
   .intro__appeal {

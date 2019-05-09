@@ -13,8 +13,12 @@
   <header class="header">
     <div class="header__wrapper wrapper">
       <a class="header__logo-link">
-        <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
-          alt="Логотип приложения Pink">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+            alt="Логотип приложения Pink">
+        </picture>
       </a>
       <input class="header__checkbox visually-hidden" type="checkbox" name="nav-toggle" id="nav-toggle">
       <label class="header__nav-toggle" for="nav-toggle">Меню сайта</label>
@@ -48,8 +52,13 @@
       <ul class="gallery__list">
         <li class="gallery__item gallery__item--panorama">
           <figure class="gallery__block">
-            <img class="gallery__image" src="img/panorama-mobile@1x.jpg" width="320" height="137"
-              alt="Фотография пользователя Анна">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
+                alt="Фотография пользователя Анна">
+            </picture>
             <figcaption class="gallery__description">
               <div class="gallery__title-block">
                 <b class="gallery__name">Анна</b>
@@ -66,8 +75,14 @@
         </li>
         <li class="gallery__item">
           <figure class="gallery__block">
-            <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография пользователя Левон">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"
+                alt="Фотография пользователя Левон">
+            </picture>
             <figcaption class="gallery__description">
               <div class="gallery__title-block">
                 <b class="gallery__name">Левон</b>
@@ -83,8 +98,14 @@
         </li>
         <li class="gallery__item">
           <figure class="gallery__block">
-            <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография пользователя Антон">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg"
+                srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография пользователя Антон">
+            </picture>
             <figcaption class="gallery__description">
               <div class="gallery__title-block">
                 <b class="gallery__name">Антон</b>
@@ -100,8 +121,14 @@
         </li>
         <li class="gallery__item">
           <figure class="gallery__block">
-            <img class="gallery__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография пользователя Борис">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-window-mobile@1x.jpg"
+                srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография пользователя Борис">
+            </picture>
             <figcaption class="gallery__description">
               <div class="gallery__title-block">
                 <b class="gallery__name">Борис</b>
@@ -117,8 +144,14 @@
         </li>
         <li class="gallery__item">
           <figure class="gallery__block">
-            <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография пользователя Сергей">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x"
+                alt="Фотография пользователя Сергей">
+            </picture>
             <figcaption class="gallery__description">
               <div class="gallery__title-block">
                 <b class="gallery__name">Сергей</b>
@@ -134,8 +167,14 @@
         </li>
         <li class="gallery__item">
           <figure class="gallery__block">
-            <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография пользователя Максим">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
+                alt="Фотография пользователя Максим">
+            </picture>
             <figcaption class="gallery__description">
               <div class="gallery__title-block">
                 <b class="gallery__name">Максим</b>
@@ -151,8 +190,14 @@
         </li>
         <li class="gallery__item">
           <figure class="gallery__block">
-            <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография пользователя Надежда">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x"
+                alt="Фотография пользователя Надежда">
+            </picture>
             <figcaption class="gallery__description">
               <div class="gallery__title-block">
                 <b class="gallery__name">Надежда</b>
@@ -173,8 +218,14 @@
       <p class="upload__appeal">Выкладывайте все, что накопилось в телефоне!</p>
       <div class="upload__wrapper">
         <div class="upload__block">
-          <img class="upload__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374"
-            alt="Ваша загруженная фотография">
+          <picture>
+            <source media="(min-width: 960px)"
+              srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+              srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img class="upload__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x"
+              alt="Ваша загруженная фотография">
+          </picture>
           <div class="upload__edit-block">
             <ul class="upload__edit-list">
               <li class="upload__edit-item">
@@ -234,8 +285,11 @@
   </main>
   <footer class="footer wrapper">
     <a class="footer__logo" href="index.html">
-      <img class="footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40"
-        alt="Логотип приложения Pink">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+        <img class="footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40"
+          alt="Логотип приложения Pink">
+      </picture>
     </a>
     <ul class="footer__socials socials">
       <li class="socials__item">

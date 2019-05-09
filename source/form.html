@@ -13,8 +13,12 @@
   <header class="header">
     <div class="header__wrapper wrapper">
       <a class="header__logo-link">
-        <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
-          alt="Логотип приложения Pink">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+            alt="Логотип приложения Pink">
+        </picture>
       </a>
       <input class="header__checkbox visually-hidden" type="checkbox" name="nav-toggle" id="nav-toggle">
       <label class="header__nav-toggle" for="nav-toggle">Меню сайта</label>
@@ -54,11 +58,11 @@
           </label>
           <label class="form__text-label form__text-label--full-name"><b>Имя:</b>
             <input class="form__text-input form__text-input--full-name" type="text" name="first-name"
-            placeholder="Введите ваше имя *">
+              placeholder="Введите ваше имя *">
           </label>
           <label class="form__text-label form__text-label--full-name"><b>Отчество:</b>
             <input class="form__text-input form__text-input--full-name" type="text" name="middle-name"
-            placeholder="Ну и отчество тоже">
+              placeholder="Ну и отчество тоже">
           </label>
         </fieldset>
         <div class="form__fieldset-wrapper form__fieldset-wrapper--achievements">
@@ -114,11 +118,11 @@
           <legend class="form__legend form__legend--contacts">Контактная информация</legend>
           <label class="form__text-label form__text-label--contacts"><b>Номер телефона</b>
             <input class="form__text-input form__text-input--contacts" type="tel" name="phone"
-            placeholder="Номер, пожалуйста">
+              placeholder="Номер, пожалуйста">
           </label>
           <label class="form__text-label form__text-label--contacts"><b>Адрес почты</b>
             <input class="form__text-input form__text-input--contacts" type="email" name="mail"
-            placeholder="Введите почту *">
+              placeholder="Введите почту *">
           </label>
         </fieldset>
         <div class="form__fieldset-wrapper form__fieldset-wrapper--os-type">
@@ -164,8 +168,11 @@
   </main>
   <footer class="footer wrapper">
     <a class="footer__logo" href="index.html">
-      <img class="footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40"
-        alt="Логотип приложения Pink">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+        <img class="footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40"
+          alt="Логотип приложения Pink">
+      </picture>
     </a>
     <ul class="footer__socials socials">
       <li class="socials__item">
@@ -179,7 +186,7 @@
       </li>
     </ul>
     <p class="footer__copyright">
-      Разработано:
+      Разработано
       <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="html-academy-logo" height="34" viewBox="0 0 40 50" width="27" xmlns="http://www.w3.org/2000/svg">
           <path

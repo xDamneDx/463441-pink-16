@@ -22,11 +22,12 @@
 .upload__block {
   width: 320px;
   margin: 0 auto;
-  padding: 20px 20px 29px 20px;
+  padding: 20px 22px 29px 18px;
 }
 
 .upload__image {
-  margin-bottom: 33px;
+  display: block;
+  margin-bottom: 34px;
 }
 
 .upload__edit-block {
@@ -37,13 +38,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 200px;
+  width: 210px;
   margin: 0 auto 30px auto;
   padding: 0;
   list-style: none;
 }
 
 .upload__edit-button {
+  width: 50px;
+  height: 59px;
   font-size: 0;
   padding: 0;
   border: none;
@@ -107,6 +110,7 @@
   line-height: 18px;
   width: 280px;
   height: 55px;
+  padding: 0 0 2px 0;
   margin-bottom: 12px;
   color: $lightblue;
   border: 3px solid $lightblue;
@@ -263,6 +267,7 @@
   .upload__button {
     width: 260px;
     margin-bottom: 24px;
+    padding: 0 5px 4px 0;
   }
 
   .upload__button:last-of-type {
@@ -336,6 +341,10 @@
     width: 288px;
   }
 
+  .upload__range--crop {
+    margin-top: -4px;
+  }
+
   .upload__range--crop .upload__range-toggle {
     left: 25%;
   }
@@ -358,5 +367,6 @@
   .upload__button {
     width: 183px;
     margin-bottom: 0;
+    padding: 0 0 3px 5px;
   }
 }

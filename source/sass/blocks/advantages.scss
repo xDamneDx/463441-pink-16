@@ -52,8 +52,14 @@
   margin: 0 auto;
 }
 
+.advantages__item--friends picture {
+  z-index: 1;
+  order: 3;
+}
+
 .advantages__image {
   z-index: 1;
+  display: block;
 }
 
 .advantages__image--mood,
@@ -62,7 +68,6 @@
 }
 
 .advantages__image--friends {
-  order: 3;
   margin-bottom: -40px;
 }
 
@@ -122,9 +127,9 @@
   }
 
   .advantages__image--friends {
-    margin-top: -280px;
-    margin-bottom: -40px;
-    margin-left: -235px;
+    margin-top: -481px;
+    margin-bottom: 0;
+    margin-left: -310px;
   }
 
   .advantages__item--friends .advantages__desc {
@@ -151,7 +156,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 940px;
-    padding: 0 31px 0 30px;
+    padding: 0 32px 0 30px;
     text-align: center;
   }
 
@@ -162,7 +167,22 @@
   }
 
   .advantages__item:last-of-type {
-    margin: 0;
+    margin-bottom: 34px;
+  }
+
+  .advantages__item--friends picture {
+    z-index: 1;
+    order: initial;
+  }
+
+  .advantages__image--mood,
+  .advantages__image--world-around {
+    display: block;
+  }
+
+  .advantages__image {
+    order: 0;
+    margin: -4px 0 56px 0;
   }
 
   .advantages__title {
@@ -177,13 +197,7 @@
     line-height: 30px;
   }
 
-  .advantages__image--mood,
-  .advantages__image--world-around {
-    display: block;
-  }
-
-  .advantages__image {
-    order: 0;
-    margin: 0 0 26px 0;
+  .advantages__item--friends .advantages__desc {
+    margin-bottom: 0;
   }
 }

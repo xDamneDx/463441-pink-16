@@ -93,7 +93,12 @@
 
 @media (min-width: $tablet-width) {
   .header__logo-link {
-    top: 44px;
+    top: 26px;
+  }
+
+  .header__logo-image {
+    width: 147px;
+    height: 41px;
   }
 
   .header__nav-toggle {
@@ -130,5 +135,6 @@
 
   .header__logo-link {
     position: initial;
+    margin: -10px 0 0 10px;
   }
 }
