@@ -31,6 +31,19 @@
   margin-top: -3px;
 }
 
+.footer__copyright-logo {
+  fill: $pink;
+}
+
+.footer__copyright-link:hover .footer__copyright-logo,
+.footer__copyright-link:focus .footer__copyright-logo {
+  fill: $lightblue;
+}
+
+.footer__copyright-link:active .footer__copyright-logo {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .footer--index {
     display: flex;
