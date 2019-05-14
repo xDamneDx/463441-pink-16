@@ -5,7 +5,7 @@
   flex-direction: column;
   min-width: 320px;
   margin: 0 auto;
-  padding: 122px 0 47px 0;
+  padding: 88px 0 47px 0;
   background-color: $lightgrey;
 }
 
@@ -20,8 +20,8 @@
 .price__tariff {
   position: relative;
   padding: 17px 20px 16px 20px;
-  border: 2px solid #e5e5e5;
   color: #ffffff;
+  border: 2px solid #e5e5e5;
   background-color: $lightblue;
 }
 
@@ -62,14 +62,56 @@
 }
 
 .price__option {
+  position: relative;
   padding: 14px 22px;
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
 }
 
+.price__option--unavailable::before,
+.price__option--unavailable::after,
+.price__option--available::before,
+.price__option--available::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+}
+
+.price__option--unavailable::before {
+  top: 27px;
+  right: 15px;
+  width: 35px;
+  transform: rotate(45deg);
+  background-color: #f25b26;
+}
+
+.price__option--unavailable::after {
+  top: 27px;
+  right: 15px;
+  width: 35px;
+  transform: rotate(-45deg);
+  background-color: #f25b26;
+}
+
+.price__option--available::before {
+  top: 32px;
+  right: 35px;
+  width: 15px;
+  transform: rotate(45deg);
+  background-color: #3dc644;
+}
+
+.price__option--available::after {
+  top: 28px;
+  right: 13px;
+  width: 29px;
+  transform: rotate(-43deg);
+  background-color: #3dc644;
+}
+
 @media (min-width: $tablet-width) {
   .price {
-    padding: 107px 0 65px 0;
+    padding: 86px 0 65px 0;
   }
 
   .price__table {
@@ -78,8 +120,8 @@
   }
 
   .price__tariff {
-    padding: 15px 20px 8px 23px;
     width: 155px;
+    padding: 15px 20px 8px 23px;
   }
 
   .price__tariff--hit::before {
@@ -113,16 +155,32 @@
   }
 
   .price__option {
-    padding: 6px 15px 9px 15px;
     font-size: 14px;
     font-weight: 400;
-    text-transform: initial;
+    padding: 6px 15px 9px 15px;
     text-align: left;
+    text-transform: initial;
   }
 
   .price__option--available,
   .price__option--unavailable {
     font-size: 0;
+  }
+
+  .price__option--unavailable::before,
+  .price__option--unavailable::after {
+    top: 18px;
+    right: 57px;
+  }
+
+  .price__option--available::before {
+    top: 24px;
+    right: 78px;
+  }
+
+  .price__option--available::after {
+    top: 20px;
+    right: 56px;
   }
 
   .price .slider-controls {
@@ -132,7 +190,7 @@
 
 @media (min-width: $desktop-width) {
   .price {
-    padding: 153px 0 93px 0;
+    padding: 146px 0 93px 0;
   }
 
   .price__table {
@@ -167,12 +225,28 @@
   }
 
   .price__option {
-    padding: 12px 15px 17px 22px;
     font-size: 18px;
+    padding: 12px 15px 17px 22px;
   }
 
   .price__option--available,
   .price__option--unavailable {
     font-size: 0;
+  }
+
+  .price__option--unavailable::before,
+  .price__option--unavailable::after {
+    top: 26px;
+    right: 99px;
+  }
+
+  .price__option--available::before {
+    top: 34px;
+    right: 118px;
+  }
+
+  .price__option--available::after {
+    top: 29px;
+    right: 97px;
   }
 }

@@ -55,11 +55,17 @@
 
 .upload__edit-svg {
   opacity: 0.3;
+  fill: $lightblue;
 }
 
+.upload__edit-button:hover .upload__edit-svg,
+.upload__edit-button:focus .upload__edit-svg {
+  opacity: 0.5;
+}
+
+.upload__edit-button:active .upload__edit-svg,
 .upload__edit-button--active .upload__edit-svg {
   opacity: 1;
-
   fill: $pink;
 }
 
@@ -228,9 +234,11 @@
     height: 22px;
   }
 
-  .upload__edit-svg {
+  .upload__edit-svg,
+  .upload__edit-button:hover .upload__edit-svg,
+  .upload__edit-button:focus .upload__edit-svg,
+  .upload__edit-button:active .upload__edit-svg {
     opacity: 1;
-
     fill: $pink;
   }
 

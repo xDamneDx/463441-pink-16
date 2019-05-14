@@ -1,6 +1,7 @@
 .footer-map {
   position: relative;
   overflow: hidden;
+  width: 320px;
   height: 200px;
   margin: 0 auto;
   background-color: #f3f1ea;
@@ -9,15 +10,14 @@
 .footer-map::before {
   content: "";
   position: absolute;
-  display: block;
-  height: 69px;
-  width: 100%;
-  left: 0;
   top: 0;
-  background-image: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 595.28 61.905' height='61.905' viewBox='0 0 595.28 61.905' width='595.28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m297.64 61.905-297.64-61.905h595.28z' fill='%23ffffff'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 33px;
+  border-top: 33px solid #ffffff;
+  border-right: 160px solid transparent;
+  border-left: 160px solid transparent;
 }
 
 .footer-map__image {
@@ -29,6 +29,13 @@
   .footer-map {
     width: 660px;
     height: 375px;
+  }
+
+  .footer-map::before {
+    height: 69px;
+    border-top: 69px solid #ffffff;
+    border-right: 330px solid transparent;
+    border-left: 330px solid transparent;
   }
 
   .footer-map__image {
@@ -43,7 +50,10 @@
   }
 
   .footer-map::before {
-    height: 125px;
+    height: 103px;
+    border-top: 103px solid #ffffff;
+    border-right: 600px solid transparent;
+    border-left: 600px solid transparent;
   }
 
   .footer-map__image {
