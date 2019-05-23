@@ -5,20 +5,23 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/normalize.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
     <div class="header__wrapper wrapper">
-      <a class="header__logo-link">
-        <picture>
-          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-          <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
-            alt="Логотип приложения Pink">
-        </picture>
+      <a class="header__logo-link" href="index.html"
+        aria-label="Логотип приложения 'Pink'. Переход на главную страницу.">
+        <svg class="header__logo header__logo--mobile" width="75" height="22">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+        </svg>
+        <svg class="header__logo header__logo--tablet" width="147" height="41">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+        </svg>
+        <svg class="header__logo header__logo--desktop" width="147" height="41">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+        </svg>
       </a>
       <input class="header__checkbox visually-hidden" type="checkbox" name="nav-toggle" id="nav-toggle">
       <label class="header__nav-toggle" for="nav-toggle">Меню сайта</label>
@@ -52,18 +55,21 @@
       <ul class="gallery__list">
         <li class="gallery__item gallery__item--panorama">
           <figure class="gallery__block">
-            <picture>
-              <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
-              <source media="(min-width: 960px)"
-                srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-              <img class="gallery__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
-                alt="Фотография пользователя Анна">
-            </picture>
+            <a class="gallery__image-link" href="img/panorama-desktop@2x.jpg">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)"
+                  srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img class="gallery__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
+                  alt="Фотография пользователя Анна">
+              </picture>
+            </a>
             <figcaption class="gallery__description">
               <div class="gallery__title-block">
                 <b class="gallery__name">Анна</b>
@@ -80,19 +86,21 @@
         </li>
         <li class="gallery__item">
           <figure class="gallery__block">
-            <picture>
-              <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
-              <source media="(min-width: 960px)"
-                srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)"
-                srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-              <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"
-                alt="Фотография пользователя Левон">
-            </picture>
+            <a class="gallery__image-link" href="img/photo-car-desktop@2x.jpg">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"
+                  alt="Фотография пользователя Левон">
+              </picture>
+            </a>
             <figcaption class="gallery__description">
               <div class="gallery__title-block">
                 <b class="gallery__name">Левон</b>
@@ -108,20 +116,22 @@
         </li>
         <li class="gallery__item">
           <figure class="gallery__block">
-            <picture>
-              <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
-              <source media="(min-width: 960px)"
-                srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)"
-                srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-              <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg"
-                srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография пользователя Антон">
-            </picture>
+            <a class="gallery__image-link" href="img/photo-drumset-desktop@2x.jpg">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg"
+                  srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография пользователя Антон">
+              </picture>
+            </a>
             <figcaption class="gallery__description">
               <div class="gallery__title-block">
                 <b class="gallery__name">Антон</b>
@@ -137,19 +147,22 @@
         </li>
         <li class="gallery__item">
           <figure class="gallery__block">
-            <picture>
-              <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
-              <source media="(min-width: 960px)"
-                srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)"
-                srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-              <img class="gallery__image" src="img/photo-window-mobile@1x.jpg"
-                srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография пользователя Борис">
-            </picture>
+            <a class="gallery__image-link" href="img/photo-window-desktop@2x.jpg">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="gallery__image" src="img/photo-window-mobile@1x.jpg"
+                  srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография пользователя Борис">
+              </picture>
+            </a>
             <figcaption class="gallery__description">
               <div class="gallery__title-block">
                 <b class="gallery__name">Борис</b>
@@ -165,19 +178,21 @@
         </li>
         <li class="gallery__item">
           <figure class="gallery__block">
-            <picture>
-              <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
-              <source media="(min-width: 960px)"
-                srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)"
-                srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-              <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x"
-                alt="Фотография пользователя Сергей">
-            </picture>
+            <a class="gallery__image-link" href="img/photo-fair-desktop@2x.jpg">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x"
+                  alt="Фотография пользователя Сергей">
+              </picture>
+            </a>
             <figcaption class="gallery__description">
               <div class="gallery__title-block">
                 <b class="gallery__name">Сергей</b>
@@ -193,19 +208,21 @@
         </li>
         <li class="gallery__item">
           <figure class="gallery__block">
-            <picture>
-              <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
-              <source media="(min-width: 960px)"
-                srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)"
-                srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-              <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
-                alt="Фотография пользователя Максим">
-            </picture>
+            <a class="gallery__image-link" href="img/photo-pov-desktop@2x.jpg">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
+                  alt="Фотография пользователя Максим">
+              </picture>
+            </a>
             <figcaption class="gallery__description">
               <div class="gallery__title-block">
                 <b class="gallery__name">Максим</b>
@@ -221,19 +238,21 @@
         </li>
         <li class="gallery__item">
           <figure class="gallery__block">
-            <picture>
-              <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
-              <source media="(min-width: 960px)"
-                srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)"
-                srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-              <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x"
-                alt="Фотография пользователя Надежда">
-            </picture>
+            <a class="gallery__image-link" href="img/photo-wing-desktop@2x.jpg">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x"
+                  alt="Фотография пользователя Надежда">
+              </picture>
+            </a>
             <figcaption class="gallery__description">
               <div class="gallery__title-block">
                 <b class="gallery__name">Надежда</b>
@@ -250,6 +269,7 @@
       </ul>
     </section>
     <section class="upload">
+      <h2 class="visually-hidden">Загрузите изображение</h2>
       <p class="upload__appeal">Затмите их всех!</p>
       <p class="upload__appeal">Выкладывайте все, что накопилось в телефоне!</p>
       <div class="upload__wrapper">
@@ -317,12 +337,13 @@
     </section>
   </main>
   <footer class="footer wrapper">
-    <a class="footer__logo" href="index.html">
-      <picture>
-        <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-        <img class="footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40"
-          alt="Логотип приложения Pink">
-      </picture>
+    <a class="footer__logo-link" href="index.html" aria-label="Логотип приложения 'Pink'. Переход на главную страницу.">
+      <svg class="footer__logo footer__logo--mobile" width="147" height="41">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+      </svg>
+      <svg class="footer__logo footer__logo--desktop" width="147" height="41">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+      </svg>
     </a>
     <ul class="footer__socials socials">
       <li class="socials__item">
@@ -337,13 +358,15 @@
     </ul>
     <p class="footer__copyright">
       Разработано
-      <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"
+        aria-label="Логотип HTML Academy. Переход на страницу интенсива.">
         <svg class="footer__copyright-logo" height="34" width="27">
           <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
         </svg>
       </a>
     </p>
   </footer>
+  <script src="js/picturefill.min.js"></script>
 </body>
 
 </html>

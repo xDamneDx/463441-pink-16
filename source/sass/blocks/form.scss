@@ -73,6 +73,10 @@
   border-radius: 2px;
 }
 
+.form__text-input:invalid {
+  background-color: #ffdddd;
+}
+
 .form__text-input::placeholder {
   color: $lightblue;
 }
