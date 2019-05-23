@@ -7,9 +7,27 @@
   display: none;
 }
 
-.footer__logo {
+.footer__logo-link {
   display: block;
   margin-bottom: 33px;
+}
+
+.footer__logo {
+  display: none;
+  fill: $lightblue;
+}
+
+.footer__logo--mobile {
+  display: inline-block;
+}
+
+.footer__logo-link:hover .footer__logo,
+.footer__logo-link:focus .footer__logo {
+  fill: $pink;
+}
+
+.footer__logo-link:active .footer__logo {
+  opacity: 0.3;
 }
 
 .footer__socials {
@@ -56,7 +74,7 @@
     padding: 39px 0 32px 0;
   }
 
-  .footer__logo {
+  .footer__logo-link {
     margin: -3px 0 0 0;
   }
 
@@ -78,6 +96,14 @@
   .footer {
     width: 940px;
     padding: 72px 0 69px 0;
+  }
+
+  .footer__logo--mobile {
+    display: none;
+  }
+
+  .footer__logo--desktop {
+    display: inline-block;
   }
 
   .footer__socials {

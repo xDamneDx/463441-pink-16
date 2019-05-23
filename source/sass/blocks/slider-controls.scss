@@ -12,7 +12,17 @@
   padding: 0;
   border: 3px solid #ffffff;
   border-radius: 50%;
-  background-color: #bec2c7;
+  background-color: $lightblue;
+  opacity: 0.3;
+}
+
+.slider-controls__btn:hover,
+.slider-controls__btn:focus {
+  opacity: 0.6;
+}
+
+.slider-controls__btn:active {
+  opacity: 0.1;
 }
 
 .slider-controls__btn--current {
@@ -20,4 +30,11 @@
   height: 12px;
   border: 3px solid $lightblue;
   background-color: #ffffff;
+  opacity: 1;
+}
+
+.slider-controls__btn--current:hover,
+.slider-controls__btn--current:focus,
+.slider-controls__btn--current:active {
+  opacity: 1;
 }

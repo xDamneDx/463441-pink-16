@@ -1,10 +1,19 @@
 .footer-map {
   position: relative;
   overflow: hidden;
-  width: 320px;
+  width: 100%;
+  max-width: 1200px;
   height: 200px;
   margin: 0 auto;
   background-color: #f3f1ea;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center -445px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .footer-map::before {
@@ -14,49 +23,52 @@
   left: 0;
   display: block;
   width: 100%;
+  max-width: 1200px;
   height: 33px;
   border-top: 33px solid #ffffff;
-  border-right: 160px solid transparent;
-  border-left: 160px solid transparent;
-}
-
-.footer-map__image {
-  display: block;
-  margin: -445px 0 0 0;
+  border-right: 50vw solid transparent;
+  border-left: 50vw solid transparent;
 }
 
 @media (min-width: $tablet-width) {
   .footer-map {
-    width: 660px;
     height: 375px;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-position: center -346px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: 700px auto;
+    }
   }
 
   .footer-map::before {
     height: 69px;
     border-top: 69px solid #ffffff;
-    border-right: 330px solid transparent;
-    border-left: 330px solid transparent;
-  }
-
-  .footer-map__image {
-    margin: -346px 0 0 -20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .footer-map {
-    width: 1200px;
     height: 502px;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-position: center -277px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .footer-map::before {
     height: 103px;
     border-top: 103px solid #ffffff;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-map::before {
     border-right: 600px solid transparent;
     border-left: 600px solid transparent;
-  }
-
-  .footer-map__image {
-    margin: -277px 0 0 0;
   }
 }
