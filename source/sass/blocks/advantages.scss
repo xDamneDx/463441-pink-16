@@ -80,6 +80,7 @@
 
 .advantages__desc {
   margin: 0;
+  width: 265px;
 }
 
 .advantages__item--friends .advantages__desc {
@@ -184,7 +185,7 @@
 
   .advantages__item picture {
     z-index: 1;
-    order: initial;
+    order: inherit;
   }
 
   .advantages__image--mood,
@@ -198,6 +199,7 @@
   }
 
   .advantages__title {
+    width: 240px;
     font-size: 30px;
     line-height: 30px;
     margin: 0 0 24px 0;
@@ -205,6 +207,7 @@
   }
 
   .advantages__desc {
+    width: 245px;
     font-size: 18px;
     line-height: 30px;
   }

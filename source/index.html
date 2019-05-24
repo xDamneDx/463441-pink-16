@@ -6,6 +6,9 @@
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
@@ -152,11 +155,9 @@
       <div class="known-fact__wrapper">
         <h2 class="visually-hidden">Известный факт</h2>
         <div class="known-fact__image-wrapper">
-          <svg class="known-fact__image" enable-background="new 0 0 298 345.097" height="276" viewBox="0 0 298 345.097"
-            width="238" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="m264.568 102.055 5.355-5.355c7.717-7.717 9.124-18.938 3.126-24.935-5.997-5.997-17.217-4.59-24.934 3.127l-5.386 5.385c-20.961-16.985-46.619-28.402-74.729-31.98v-9.583h7.658c10.914 0 19.843-8.711 19.843-19.357s-8.928-19.357-19.842-19.357h-53.317c-10.913 0-19.842 8.711-19.842 19.357s8.929 19.357 19.842 19.357h7.658v9.583c-73.319 9.332-130 71.947-130 147.8 0 82.291 66.709 149 149 149 82.29 0 149-66.709 149-149 0-35.663-12.535-68.394-33.432-94.042zm-115.568 204.209c-60.844 0-110.167-49.323-110.167-110.167s49.323-110.167 110.167-110.167c60.843 0 110.167 49.323 110.167 110.167s-49.324 110.167-110.167 110.167z"
-              fill="#dedede" /></svg>
+          <svg class="known-fact__image" height="276" width="238">
+            <use xlink:href="img/sprite.svg#icon-timer"></use>
+          </svg>
         </div>
         <div class="known-fact__block">
           <h3 class="known-fact__title">Эффект на 24 часа!</h3>
@@ -281,8 +282,7 @@
     </section>
     <section class="footer-map">
       <h2 class="visually-hidden">Как нас найти.</h2>
-      <iframe src="https://yandex.ru/map-widget/v1/-/CCbtAX1w" width="100%" height="100%" frameborder="0"
-        allowfullscreen="true"></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCbtAX1w"></iframe>
     </section>
   </main>
   <footer class="footer footer--index wrapper">
@@ -316,6 +316,7 @@
     </p>
   </footer>
   <script src="js/picturefill.min.js"></script>
+  <script src="js/svgxuse.min.js"></script>
 </body>
 
 </html>
