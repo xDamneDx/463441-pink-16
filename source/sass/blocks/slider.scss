@@ -11,6 +11,14 @@
   display: none;
 }
 
+.slider__slide {
+  display: none;
+}
+
+.slider__slide:nth-of-type(1) {
+  display: list-item;
+}
+
 .slider__slide-name {
   display: block;
   margin-bottom: 13px;
@@ -36,8 +44,12 @@
   }
 
   .slider__slide {
-    display: flex;
+    display: none;
     flex-direction: column;
+  }
+
+  .slider__slide:nth-of-type(1) {
+    display: flex;
   }
 
   .slider__slide-name {

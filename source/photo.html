@@ -276,7 +276,7 @@
       <p class="upload__appeal">Затмите их всех!</p>
       <p class="upload__appeal">Выкладывайте все, что накопилось в телефоне!</p>
       <div class="upload__wrapper">
-        <div class="upload__block">
+        <form class="upload__block" action="https://echo.htmlacademy.ru" method="GET">
           <picture>
             <source type="image/webp" media="(min-width: 960px)"
               srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
@@ -326,16 +326,12 @@
                 </div>
               </li>
             </ul>
-            <div class="upload__range upload__range--global">
-              <div class="upload__range-scale"></div>
-              <div class="upload__range-toggle"></div>
-            </div>
             <div class="upload__buttons">
-              <button class="upload__button upload__button--submit" type="button">Запостить</button>
+              <button class="upload__button upload__button--submit" type="submit">Запостить</button>
               <button class="upload__button upload__button--reset" type="button">Отмена</button>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </section>
   </main>
@@ -359,15 +355,13 @@
         <a href="#" class="socials__button socials__button--youtube">YouTube</a>
       </li>
     </ul>
-    <p class="footer__copyright">
+    <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive"
+      aria-label="HTML Academy. Переход на страницу интенсива.">
       Разработано
-      <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"
-        aria-label="Логотип HTML Academy. Переход на страницу интенсива.">
-        <svg class="footer__copyright-logo" height="34" width="27">
-          <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
-        </svg>
-      </a>
-    </p>
+      <svg class="footer__copyright-logo" height="34" width="27">
+        <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+      </svg>
+    </a>
   </footer>
   <script src="js/picturefill.min.js"></script>
   <script src="js/svgxuse.min.js"></script>

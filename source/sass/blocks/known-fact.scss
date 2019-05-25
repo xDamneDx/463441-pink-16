@@ -1,5 +1,6 @@
 .known-fact {
   display: none;
+  overflow-x: hidden;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,4 +1,6 @@
 .gallery {
+  width: 100%;
+  overflow-x: hidden;
   padding-top: 45px;
 }
 
@@ -234,6 +236,14 @@
 
   .gallery__item {
     margin-bottom: 54px;
+  }
+
+  .gallery__item:not(:nth-of-type(3n+1)) {
+    margin-right: 20px;
+  }
+
+  .gallery__item:last-of-type {
+    margin-right: auto;
   }
 
   .gallery__item--panorama {
